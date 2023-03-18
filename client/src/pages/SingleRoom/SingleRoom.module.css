@@ -1,0 +1,140 @@
+.userHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+}
+.mic{
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    width: 26px;
+    height: 24px;
+    background: #262626;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+.userHead span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.userAvater {
+  width: 90px;
+  height: 90px;
+  border: 4px solid green;
+  border-radius: 50%;
+  object-fit: cover;
+  user-select: none;
+}
+.hr {
+  width: 100%;
+  border: 1px solid #323232;
+}
+.goBack {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 3rem 0;
+  cursor: pointer;
+  user-select: none;
+}
+.goBack img {
+  transform: rotate(180deg);
+}
+.goBack span {
+  font-weight: bold;
+  color: #fff;
+  font-size: 22px;
+  position: relative;
+}
+.goBack span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60%;
+  height: 4px;
+  background: #0077ff;
+}
+
+.SingleRoom {
+  background: #1d1d1d;
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  height: calc(100vh - 226px);
+}
+.headingWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.headingWrapper h2{
+    font-weight: bold;
+    font-size: 22px;
+}
+.ListWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.leaveButoons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leaveButoons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    background-color: #262626;
+    cursor: pointer;
+}
+.leaveButoons button:first-of-type{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    user-select: none;
+}
+.leaveButoons button:last-of-type{
+    height: 42px;
+    width: 180px;
+    border-radius: 50px;
+    user-select: none;
+}
+.leaveButoons button:last-of-type span{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.leaveButoons button:hover{
+    background-color: #323232;
+}
+
+
+
+
+
+
+@media (max-width: 550px){
+    .leaveButoons{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .leaveButoons button:last-of-type{
+        width: 150px;
+    }
+}

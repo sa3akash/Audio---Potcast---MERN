@@ -1,0 +1,25 @@
+.homePagaraph{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #C4C5C5;
+    text-align: center;
+}
+.HomeLink{
+    color: #0077FF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.HomeLink a{
+    font-weight: bold;
+}
+.HomeLink a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    .homePagaraph{
+        font-size: 16px;
+    }
+}

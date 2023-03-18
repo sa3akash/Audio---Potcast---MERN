@@ -1,0 +1,55 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    user-select: none;
+}
+.logo span{
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.profileContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profilePhotoContainer{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #0077FF;
+}
+.profilePhotoContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileContainer span{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.profileContainer button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .profileContainer span{
+        display: none;
+    }
+}

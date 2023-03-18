@@ -1,0 +1,25 @@
+.input{
+    width: 100px;
+    height: 36px;
+    background: #262626;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.spanWrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #C4C5C5;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+.spanWrapper a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

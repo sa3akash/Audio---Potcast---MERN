@@ -1,0 +1,18 @@
+.input{
+    width: 300px;
+    height: 36px;
+    background: #262626;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+.paragraph{
+    color: #C4C5C5;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 20px;
+}

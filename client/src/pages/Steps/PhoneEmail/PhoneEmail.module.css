@@ -1,0 +1,41 @@
+.CardWrapper{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.ButtonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.ButtonWrapper button{
+    background: #262626;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.active{
+    background: #0077FF !important;
+}
+.input{
+    width: 300px;
+    height: 36px;
+    background: #262626;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+.paragraph{
+    color: #C4C5C5;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}

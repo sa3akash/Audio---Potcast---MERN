@@ -1,0 +1,80 @@
+.RoomCardContainer{
+    background: #1D1D1D;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    height: 190px;
+}
+.topic{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.AvaterContainer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+.AvaterImage img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #20BD5F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1D1D1D;
+}
+.AvaterImage img:last-child{
+    top: 20px;
+    left: 20px;
+}
+.AvaterName{
+   margin-left: 90px;
+}
+.nameWrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.peopleCount{
+    align-self: flex-end;
+}
+.peopleCount span{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+    align-items: flex-end;
+}
+.singleSpeaker{
+    margin: 0;
+    padding: 0;
+ }
+ .singleSpeaker .AvaterImage img{
+    position: initial;
+ }
+ .singleSpeaker .AvaterName{
+     margin-left: 20px;
+ }
+ .singleSpeaker .nameWrapper span{
+     margin: 0;
+ }
+
+
+ @media (max-width: 700px) {
+    .RoomCardContainer{
+        background: #1D1D1D;
+        padding: 20px;
+        width: 100%;
+        height: 150px;
+        font-size: 14px;
+    }
+    .RoomCardContainer h3{
+        font-size: 16px;
+    }
+ }

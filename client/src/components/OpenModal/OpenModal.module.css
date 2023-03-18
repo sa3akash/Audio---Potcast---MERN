@@ -1,0 +1,148 @@
+.modelWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.model{
+    background: #1D1D1D;
+    width: 50%;
+    border-radius: 20px;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.top{
+    padding: 30px;
+    border-bottom: 2px solid #262626;
+}
+.top h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.top h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.bottom{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.OpenModalInput{
+    background: #262626;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+}
+.bottom h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.roomType{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 0;
+}
+.typeBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.typeBox span{
+    font-size: 18px;
+    font-weight: normal;
+}
+.typeBox:hover{
+    background-color: #262626;
+}
+.active{
+    background-color: #262626;
+}
+.bottomButton{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #20BD5F;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.bottomButton span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.bottomButton:hover{
+    background: #136a36;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.close:hover{
+    background: #262626;
+}
+
+
+
+@media (max-width: 768px) {
+    .model{
+        width: 100%;
+        max-width: 70%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .model{
+        width: 100%;
+        max-width: 95%;
+    }
+    .top{
+        padding: 20px;
+    }
+    .modelWrapper h3, .modelWrapper h2{
+        font-size: 18px;
+    }
+    .modelWrapper .typeBox img{
+        transform: scale(0.8);
+    }
+    .modelWrapper .typeBox span{
+        font-size: 16px;
+    }
+    .bottom h2{
+        font-size: 16px;
+    }
+    .bottom button{
+        padding: 8px 25px;
+    }
+}
